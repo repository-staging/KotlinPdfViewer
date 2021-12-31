@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main.xml"
+    app:startDestination="@+id/pdfViewerFragment">
+
+    <fragment
+        android:id="@+id/pdfViewerFragment"
+        android:name="app.testing.kotlinpdfviewer.ui.main.PdfViewerFragment"
+        android:label="pdf_viewer_fragment"
+        tools:layout="@layout/pdf_viewer_fragment">
+        <!--
+            Navigating to or from Dialog Fragments are currently unsupported.
+        -->
+        <!--<action
+            android:id="@+id/action_to_num_page_picker"
+            app:destination="@+id/jumpToPageFragment" />
+        <action
+            android:id="@+id/action_to_document_properties"
+            app:destination="@+id/documentPropertiesFragment" />-->
+    </fragment>
+    <fragment
+        android:id="@+id/jumpToPageFragment"
+        android:name="app.testing.kotlinpdfviewer.ui.fragment.JumpToPageFragment"
+        android:label="num_page_picker_screen" >
+        <!--action
+            android:id="@+id/action_send_to_page"
+            app:destination="@+id/pdfViewerFragment" />-->
+    </fragment>
+    <fragment
+        android:id="@+id/documentPropertiesFragment"
+        android:name="app.testing.kotlinpdfviewer.ui.fragment.DocumentPropertiesFragment"
+        android:label="document_prop_screen" >
+        <!--<action
+            android:id="@+id/action_properties_read"
+            app:destination="@+id/pdfViewerFragment" />-->
+    </fragment>
+</navigation>
