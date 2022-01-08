@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.KotlinPDFViewer.DayNight" parent="Theme.KotlinPDFViewer.Night" />
+
+    <style name="Theme.KotlinPDFViewer.Night" parent="Theme.KotlinPDFViewer">
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>
